@@ -7,9 +7,9 @@ module.exports = function main(stringInput) {
 	var temp2='';
 	var temp3='';
 	for(i=0;i<stringInput.length;i++){
-		num.push(stringInput.chatAt(i));
+		num.push(stringInput.charAt(i));
 	}
-	for(i=o;i<num.length;i++){
+	for(i=0;i<num.length;i++){
 		switch(num[i]){
 			case "0":
 			     temp1='._.';
@@ -37,9 +37,9 @@ module.exports = function main(stringInput) {
 				temp3='..|';
 				break;   
             case "5":
-				tmp1='._.';
-				tmp2='|_.';
-				tmp3='._|';
+				temp1='._.';
+				temp2='|_.';
+				temp3='._|';
 				break;	
 			case "6":
 				temp1='._.';
@@ -74,8 +74,8 @@ module.exports = function main(stringInput) {
 		}
 	}
 	
-	var st=st1+'\n'+st2+'\n'+st3;
-	console.log(st);
+	var st=st1+'\n'+st2+'\n'+st3+'\n';
+	//console.log(st);
 	return st;
 	
 };
